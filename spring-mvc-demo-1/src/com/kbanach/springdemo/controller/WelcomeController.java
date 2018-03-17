@@ -11,7 +11,6 @@ import com.kbanach.service.demo.GenericWelcomeService;
 
 @Controller
 public class WelcomeController {
-	
 	@Autowired
 	private GenericWelcomeService welcomeService; 
 	
