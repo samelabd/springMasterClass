@@ -12,15 +12,15 @@ public class InitDestroyApp {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("beans-cp.xml");
 
 		// create the bean
-		Organization org = (Organization) ctx.getBean("myorg");
-
-		// invoke the company slogan via the bean
-		System.out.println(org.corporateSlogan());
-
-		// print organization details
-		System.out.println(org);
-		
-		System.out.println(org.corporateService());
+//		Organization org = (Organization) ctx.getBean("myorg");
+//
+//		// invoke the company slogan via the bean
+//		System.out.println(org.corporateSlogan());
+//
+//		// print organization details
+//		System.out.println(org);
+//		
+//		System.out.println(org.corporateService());
 
 		// close the application context ( container )
 		((ClassPathXmlApplicationContext) ctx).close();

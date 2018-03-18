@@ -14,22 +14,29 @@ public class Organization {
 	public Organization() {
 		System.out.println("default constructor called");
 	}
-	
+
 	public Organization(String companyName, int yearOfIncorporation) {
 		this.companyName = companyName;
 		this.yearOfIncorporation = yearOfIncorporation;
 		System.out.println("constructor called");
 	}
-	
-	public void initialize() {
-		System.out.println("Organization: initalize method called");
-	}
-	
-	public void destroy() {
-		System.out.println("Organization: destroy method called");
+
+	// public void initialize() {
+	// System.out.println("Organization: initalize method called");
+	// }
+	//
+	// public void destroy() {
+	// System.out.println("Organization: destroy method called");
+	// }
+
+	public void postConstruct() {
+		System.out.println("organization: postConstruct called...................");
 	}
 
-	
+	public void preDestroy() {
+		System.out.println("organization: preDestroy called...................");
+	}
+
 	public void setPostalCode(String postalCode) {
 		this.postalCode = postalCode;
 		System.out.println("setPostalCode called");
@@ -53,7 +60,7 @@ public class Organization {
 	public String corporateSlogan() {
 		return this.slogan;
 	}
-	
+
 	public String corporateService() {
 		return businessService.offerService(companyName);
 	}
