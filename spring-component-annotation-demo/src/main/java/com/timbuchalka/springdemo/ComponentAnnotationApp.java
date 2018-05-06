@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.timbuchalka.springdemo.domain.Organization;
 import com.timbuchalka.springdemo.domain.promotion.TradeFair;
 
-public class AutowiredAnnotationApp {
+public class ComponentAnnotationApp {
 
 	public static void main(String[] args) {
 		// create the application context
@@ -14,7 +14,6 @@ public class AutowiredAnnotationApp {
 
 		TradeFair tradeFair = (TradeFair) ctx.getBean("myfair");
 		System.out.println(tradeFair.specialPromotionalPricing());
-		
 
 		// close the application context ( container )
 		((ClassPathXmlApplicationContext) ctx).close();

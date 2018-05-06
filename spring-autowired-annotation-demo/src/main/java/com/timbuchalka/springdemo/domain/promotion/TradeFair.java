@@ -6,12 +6,13 @@ import com.timbuchalka.springdemo.domain.product.ConsumerProduct;
 import com.timbuchalka.springdemo.domain.product.IndustrialProduct;
 
 public class TradeFair {
-	
+
 	@Autowired
 	private IndustrialProduct industrialProduct;
 	
 	@Autowired
 	private ConsumerProduct consumerProduct;
+
 	
 //	@Autowired
 //	public TradeFair(IndustrialProduct industrialProduct, ConsumerProduct consumerProduct) {
@@ -40,16 +41,5 @@ public class TradeFair {
 		
 		return priceInfo;
 	}
-	
-	
-//	@Autowired
-//	public void setIndustrialProduct(IndustrialProduct industrialProduct) {
-//		this.industrialProduct = industrialProduct;
-//	}
-//
-//	@Autowired
-//	public void setConsumerProduct(ConsumerProduct consumerProduct) {
-//		this.consumerProduct = consumerProduct;
-//	}
-	
+
 }
