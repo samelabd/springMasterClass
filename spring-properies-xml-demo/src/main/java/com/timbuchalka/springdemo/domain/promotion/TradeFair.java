@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import com.timbuchalka.springdemo.domain.product.ConsumerProduct;
 import com.timbuchalka.springdemo.domain.product.IndustrialProduct;
 
-@Component("newmyfair")
+@Component("myfair")
 public class TradeFair {
 
 	@Autowired
